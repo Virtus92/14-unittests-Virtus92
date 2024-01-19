@@ -17,3 +17,7 @@ Der Teilnehmer/die Teilnehmerin kann nach erfolgreicher Absolvierung dieses Them
 1. [Wie schreibt man Unittest?](03-unittests-schreiben.md)
 1. [Für welche Fälle braucht es Unittests?](04-anwendungsfaelle.md)
 1. [Aufgabenstellung](XX-aufgabenstellung.md)
+
+## weiterführende Inhalte
+
+[JUnit 5 - User Guide](https://junit.org/junit5/docs/current/user-guide/)
