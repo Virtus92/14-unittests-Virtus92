@@ -7,3 +7,5 @@ In IntelliJ: File -> New -> Project from Version Control...
 In das folgende Fenster einfach die URL zum GITHub-Repository einfügen und auf *Clone* klicken:
 
 ![Projekt von GitHUB klonen - URL eingeben](img/clone-project-from-url.png)
+
+Zurück zur [Startseite](README.md)
