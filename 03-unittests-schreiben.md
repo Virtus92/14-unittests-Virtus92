@@ -6,29 +6,33 @@ Die Unittest-Klasse gehört zum Package der zu testenden Klasse. Ab hier untersc
 
 ## Java
 
+Bisher haben wir unsere Klassen unter `src/main`. Dort befinden sich die Programmklassen. Unittest-Klassen hingegen befinden sich immer unter `src/test`.
+
 Zuerst werden folgende Klassen importiert:
-- *import org.junit.jupiter.api.Test;*
-Diese Klasse braucht man, um Methoden mit der Annotation **@Test** versehen zu können und damit die Methode als UnitTest zu definieren
-- *import static org.junit.jupiter.api.Assertions.assertEquals;*
-- *import static org.junit.jupiter.api.Assertions.assertThrows;*
+- `import org.junit.jupiter.api.Test;`
+Diese Klasse braucht man, um Methoden mit der Annotation `@Test` versehen zu können und damit die Methode als UnitTest zu definieren
+- `import static org.junit.jupiter.api.Assertions.assertEquals;`
+- `import static org.junit.jupiter.api.Assertions.assertThrows;`
 
 In einem UnitTest wird geprüft, ob die aufgerufene Methode das gewünschte Ergebnis für die mitgegebenen Parameter liefert:
-- **assertEquals** prüft, ob der Rückgabewert dem entspricht, was erwartet wird. 
-- **assertThrows** prüft, ob die gewünschte Exception ausgeworfen wird.
+- `assertEquals` prüft, ob der Rückgabewert dem entspricht, was erwartet wird. 
+- `assertThrows` prüft, ob die gewünschte Exception ausgeworfen wird.
 
 Meist ist auch z.B. folgende Klasse sinnvoll:
-- *import org.junit.jupiter.api.BeforeEach*
-Mit der Annotation **@BeforeEach** definiert man, dass die betroffene Methode vor jedem Test ausgeführt wird.
-- *import org.junit.jupiter.api.BeforeAll*
-Mit der Annotation **@BeforeAll** definiert man, dass die betroffene Methode vor dem ersten Test des Testdurchlaufs ausgeführt wird.
-- *import org.junit.jupiter.api.AfterEach*
-Mit der Annotation **@AfterEach** definiert man, dass die betroffene Methode nach jedem Test ausgeführt wird.
-- *import org.junit.jupiter.api.AfterAll*
-Mit der Annotation **@AfterAll** definiert man, dass die betroffene Methode nach dem letzten Test des Testdurchlaufs ausgeführt wird.
+- `import org.junit.jupiter.api.BeforeEach`
+Mit der Annotation `@BeforeEach` definiert man, dass die betroffene Methode vor jedem Test ausgeführt wird.
+- `import org.junit.jupiter.api.BeforeAll`
+Mit der Annotation `@BeforeAll` definiert man, dass die betroffene Methode vor dem ersten Test des Testdurchlaufs ausgeführt wird.
+- `import org.junit.jupiter.api.AfterEach`
+Mit der Annotation `@AfterEach` definiert man, dass die betroffene Methode nach jedem Test ausgeführt wird.
+- `import org.junit.jupiter.api.AfterAll`
+Mit der Annotation `@AfterAll` definiert man, dass die betroffene Methode nach dem letzten Test des Testdurchlaufs ausgeführt wird.
 
 Hier ein Beispiel zur Veranschaulichung:
 
 ```java
+// Java 
+
 package com.cb.square;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -66,15 +70,18 @@ class SquareTest {
 
 ## C#
 
+```csharp
+// C# 
 
+```
 
 ## Was gehört in ein Unittest hinein? Und wie sollen diese benannt werden?
 
 Grundsätzlich benennt man die Testmethode nach der zu testenden Methode. Also nach dem Schema:
-**<methodenname>Test<Anwendungsfall>**
-Wobei <methodenname> ein Platzhalter für den Methodennamen ist und <Anwendungsfall> ein Platzhalter für den spezifischen Fall, den man testet. 
+`<methodenname>Test<Anwendungsfall>`
+Wobei `<methodenname>` ein Platzhalter für den Methodennamen ist und `<Anwendungsfall>` ein Platzhalter für den spezifischen Fall, den man testet. 
 
-In vielen Fällen reicht ein **assertEquals**, um den Test durchzuführen. Oft muss man aber dennoch ein Paar Testspezifische Vorbereitungen vornehmen:
+In vielen Fällen reicht ein `assertEquals`, um den Test durchzuführen. Oft muss man aber dennoch ein Paar Testspezifische Vorbereitungen vornehmen:
 - Daten in die Objekte speichern
 - Vorberechnungen durchführen
 
@@ -82,6 +89,6 @@ Wichtig ist, das Ziel nicht aus den Augen zu verlieren:
 > [!IMPORTANT]
 > ***Man möchte genau die eine und nur die eine Methode testen!***
 
-Der Test erfolgt dann durch den **assert[...]**-Befehl.
+Der Test erfolgt dann durch den `assert[...]`-Befehl.
 
 Zurück zur [Startseite](README.md)

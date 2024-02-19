@@ -1,22 +1,22 @@
 # Einrichtung der Entwicklungsumgebung
 
-Um Unittest schreiben zu können müssen zuerst die richtigen Libraries eingebunden werden.
+Um einen `Unittest` schreiben zu können müssen zuerst die richtigen Libraries eingebunden werden.
 
 ## Java
 
 ### Dependencies registrieren
 
-In MAVEN-Projekten werden die Abhängigkeiten in ein sogenanntes **pom.xml**-File zusammengestellt. Diese Datei ist Root-Ordner des Projekts zu finden.
+In MAVEN-Projekten werden die Abhängigkeiten in ein sogenanntes `pom.xml`-File zusammengestellt. Diese Datei ist im Root-Ordner des Projekts zu finden.
 
 ![Projektstruktur mit POM-File](img/projektstruktur.png)
 
 > [!IMPORTANT]
-> Bei jeder Änderung im **pom.xml**-File müssen die Dependencies neu geladen werden. Das erkennt man in IntelliJ daran, dass die neu eingetragenen Dependencies in roter Schrift dargestellt werden. 
-> Im IntelliJ-Fenster des **pom.xml**-Files oben rechts erscheint folgendes Icon: ![Maven-Dependencies aktualisieren](img/maven-dependencies-aktualisieren.png)
+> Bei jeder Änderung im `pom.xml`-File müssen die Dependencies neu geladen werden. Das erkennt man in IntelliJ daran, dass die neu eingetragenen Dependencies in roter Schrift dargestellt werden. 
+> Im IntelliJ-Fenster des `pom.xml`-Files oben rechts erscheint folgendes Icon: ![Maven-Dependencies aktualisieren](img/maven-dependencies-aktualisieren.png)
 
-Diese Datei muss man editieren und folgende Dependency im Block <dependencies> hinzufügen:
+Um die entsprechende Dependency zu registrieren muss man diese Datei editieren und folgendes im Block <dependencies> hinzufügen:
 
-
+`pom.xml`
 ```xml
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -26,12 +26,12 @@ Diese Datei muss man editieren und folgende Dependency im Block <dependencies> h
         </dependency>
 ```
 
-Ein einfaches **pom.xml**-File für Unittests würde in folgendem Beispiel aussehen:
+Ein einfaches `pom.xml`-File für Unittests würde in folgendem Beispiel so ähnlich aussehen:
 
 ![POM-File-Beispiel](img/pom-file.png)
 
 > [!INFORMATION]
-> Die Versionsnummern sind natürlich entsprechend der benötigten Version anzupassen
+> Die Versionsnummern sind natürlich entsprechend der benötigten Version anzupassen.
 
 ## C#
 
