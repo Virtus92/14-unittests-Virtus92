@@ -14,7 +14,7 @@ In MAVEN-Projekten werden die Abhängigkeiten in ein sogenanntes `pom.xml`-File 
 > Bei jeder Änderung im `pom.xml`-File müssen die Dependencies neu geladen werden. Das erkennt man in IntelliJ daran, dass die neu eingetragenen Dependencies in roter Schrift dargestellt werden. 
 > Im IntelliJ-Fenster des `pom.xml`-Files oben rechts erscheint folgendes Icon: ![Maven-Dependencies aktualisieren](img/maven-dependencies-aktualisieren.png)
 
-Um die entsprechende Dependency zu registrieren muss man diese Datei editieren und folgendes im Block <dependencies> hinzufügen:
+Um die entsprechende Dependency zu registrieren muss man diese Datei editieren und folgendes im Block `<dependencies>` hinzufügen:
 
 `pom.xml`
 ```xml
