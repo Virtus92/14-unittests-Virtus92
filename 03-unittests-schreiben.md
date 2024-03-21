@@ -78,8 +78,8 @@ class SquareTest {
 ## Was gehört in ein Unittest hinein? Und wie sollen diese benannt werden?
 
 Grundsätzlich benennt man die Testmethode nach der zu testenden Methode. Also nach dem Schema:
-`<methodenname>Test<Anwendungsfall>`
-Wobei `<methodenname>` ein Platzhalter für den Methodennamen ist und `<Anwendungsfall>` ein Platzhalter für den spezifischen Fall, den man testet. 
+`methodennameTestAnwendungsfall`
+Wobei `methodenname` ein Platzhalter für den Methodennamen ist und `Anwendungsfall` ein Platzhalter für den spezifischen Fall ist, den man testet. 
 
 In vielen Fällen reicht ein `assertEquals`, um den Test durchzuführen. Oft muss man aber dennoch ein Paar Testspezifische Vorbereitungen vornehmen:
 - Daten in die Objekte speichern
