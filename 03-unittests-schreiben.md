@@ -2,21 +2,21 @@
 
 Was macht aus einer Methode einen UnitTest?
 
-Die Unittest-Klasse gehört zum Package der zu testenden Klasse. Ab hier unterscheiden sich die Programmiersprachen:
+Die Unittest-Klasse gehört zum Package/Namespace der zu testenden Klasse. Ab hier unterscheiden sich die Programmiersprachen:
 
 ## Java
 
-Bisher haben wir unsere Klassen unter `src/main`. Dort befinden sich die Programmklassen. Unittest-Klassen hingegen befinden sich immer unter `src/test`.
+Bisher haben wir unsere Klassen unter `src/main` implementiert. Dort befinden sich die Programmklassen. Unittest-Klassen hingegen befinden sich immer unter `src/test`.
 
 Zuerst werden folgende Klassen importiert:
-- `import org.junit.jupiter.api.Test;`
-Diese Klasse braucht man, um Methoden mit der Annotation `@Test` versehen zu können und damit die Methode als UnitTest zu definieren
+- `import org.junit.jupiter.api.Test;` Diese Klasse braucht man, um Methoden mit der Annotation `@Test` versehen zu können und damit die Methode als UnitTest zu definieren
 - `import static org.junit.jupiter.api.Assertions.assertEquals;`
 - `import static org.junit.jupiter.api.Assertions.assertThrows;`
 
 In einem UnitTest wird geprüft, ob die aufgerufene Methode das gewünschte Ergebnis für die mitgegebenen Parameter liefert:
 - `assertEquals` prüft, ob der Rückgabewert dem entspricht, was erwartet wird. 
 - `assertThrows` prüft, ob die gewünschte Exception ausgeworfen wird.
+- Weitere Assert-Methoden findet ihr in der [JUnit-Dokumentation](https://junit.org/junit5/docs/5.9.1/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html)
 
 Meist ist auch z.B. folgende Klasse sinnvoll:
 - `import org.junit.jupiter.api.BeforeEach`
@@ -28,11 +28,12 @@ Mit der Annotation `@AfterEach` definiert man, dass die betroffene Methode nach 
 - `import org.junit.jupiter.api.AfterAll`
 Mit der Annotation `@AfterAll` definiert man, dass die betroffene Methode nach dem letzten Test des Testdurchlaufs ausgeführt wird.
 
+[Nähere Informationen zu JUnit](https://junit.org/junit5/docs/current/user-guide/)
+
 Hier ein Beispiel zur Veranschaulichung:
 
 ```java
 // Java 
-
 package com.cb.square;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -70,9 +71,44 @@ class SquareTest {
 
 ## C#
 
+In .Net gibt es mehrere Möglichkeiten Unit-Tests zu schreiben. Hier eine Möglichkeit mit einem Pendant zu JUnit: NUnit.
+
 ```csharp
 // C# 
+using NUnit.Framework;
 
+namespace com.cb.square
+{
+    [TestFixture]
+    public class SquareTest
+    {
+        private Square square;
+
+        [SetUp] // This Method will be executed before each other test method
+        public void SetUp()
+        {
+            square = new Square();
+        }
+
+        [Test] // Tests for squared Values
+        public void CalculateTest()
+        {
+            // expected Value is 4 when we calculate 2*2
+            Assert.AreEqual(4, square.Calculate(2));
+            // expected Value is 9 when we calculate 3*3
+            Assert.AreEqual(9, square.Calculate(3));
+            // expected Value is 1 when we calculate 1*1
+            Assert.AreEqual(1, square.Calculate(1));
+        }
+
+        [Test] // Test for an ArgumentException
+        public void CalculateTestException()
+        {
+            // When we call the Method with -1, we expect that an ArgumentException is thrown
+            Assert.Throws<ArgumentException>(() => square.Calculate(-1));
+        }
+    }
+}
 ```
 
 ## Was gehört in ein Unittest hinein? Und wie sollen diese benannt werden?

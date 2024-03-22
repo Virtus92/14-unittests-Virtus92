@@ -1,10 +1,10 @@
 # Unittests - Anwendungsfälle
 
-## Wieviele Unittests soll ich je Klasse schreiben?
+## Wie viele Unittests soll ich je Klasse schreiben?
 
-Es gilt grundsätzlich: soviele wie notwendig!
+Es gilt grundsätzlich: so viele wie notwendig!
 
-Zur besseren Leserlichkeit der Unittests wäre die Empfehlung:
+Zur besseren Leserlichkeit und zur leichteren Fehleranalyse der Unittests wäre die Empfehlung:
 
 > In einem Test wird nur ein Anwendungsfall getestet
 
@@ -12,7 +12,7 @@ Zur besseren Leserlichkeit der Unittests wäre die Empfehlung:
 
 Unter Anwendungsfall versteht man Fälle, die denselben Codeteil durchlaufen:
 - **Normalfall**: bei unserem Beispiel werden mehrere Werte getestet, die sich im gewünschten Wertebereich befinden.
-- **Grenzfall/Spezialfall**: Je Grenzfall ein Test, da hierfür eine besondere Behandlung erfolgt
-- **Fehlerfall**: Je Exception, die ausgeworfen werden kann, ein Test. Bei verschiedenen Anwendungsfälle, welche dieselbe Exception auswerfen, unbedingt jeweils 1 Test.
+- **Grenzfall/Spezialfall**: Je Grenzfall ein Test, da hierfür eine besondere Behandlung erfolgt.
+- **Fehlerfall**: Je Exception, die ausgeworfen werden kann, ein Test. Bei verschiedenen Anwendungsfällen, welche dieselbe Exception auswerfen, unbedingt jeweils 1 Test.
 
 Zurück zur [Startseite](README.md)

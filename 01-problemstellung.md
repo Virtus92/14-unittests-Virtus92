@@ -1,6 +1,6 @@
 # Problemstellung
 
-In der Softwareentwicklung geht es nicht immer darum, etwas Neues zu schreiben. Sehr oft muss man bestehende Methoden ändern, um sich an neuen Anforderungen anzupassen oder, um einen Bug zu fixen, allerdings muss die Rückwärtskompatibilität gegeben sein. Wie stelle ich sicher, dass die Rückwärtskompatibilität trotz der Änderungen immer sichergestellt ist?
+In der Softwareentwicklung geht es nicht immer darum, etwas Neues zu schreiben. Sehr oft muss man bestehende Methoden ändern, um sich an neue Anforderungen anzupassen oder, um einen Bug zu fixen, allerdings muss die Rückwärtskompatibilität gegeben sein. Wie stelle ich sicher, dass die Rückwärtskompatibilität trotz der Änderungen immer sichergestellt ist?
 
 In einer Firma entwickelt man nicht alleine und man arbeitet in der Regel an größeren Programmen, sodass nicht jeder Entwickler einen Überblick über alle Anforderungen hat, die den Code erfüllen soll.
 
