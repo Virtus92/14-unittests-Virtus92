@@ -9,12 +9,12 @@ Der:die Teilnehmer:in kann nach erfolgreicher Absolvierung dieses Themas:
 
 ## Inhaltsverzeichnis
 
-1. [Problemstellung](01-problemstellung.md)
-1. [Einrichtung der Entwicklungsumgebung](02-einrichtung-entwicklungsumgebung.md)
-1. [Wie schreibt man Unittest?](03-unittests-schreiben.md)
-1. [Für welche Fälle braucht es Unittests?](04-anwendungsfaelle.md)
-1. [Projekt von GITHub klonen](05-cloneprojectfromgithub.md)
-1. [Aufgabenstellung](XX-aufgabenstellung.md)
+1. [Problemstellung](contents/01-problemstellung.md)
+1. [Einrichtung der Entwicklungsumgebung](contents/02-einrichtung-entwicklungsumgebung.md)
+1. [Wie schreibt man Unittest?](contents/03-unittests-schreiben.md)
+1. [Für welche Fälle braucht es Unittests?](contents/04-anwendungsfaelle.md)
+1. [Projekt von GITHub klonen](contents/05-cloneprojectfromgithub.md)
+1. [Aufgabenstellung](contents/XX-aufgabenstellung.md)
 
 ## weiterführende Inhalte
 

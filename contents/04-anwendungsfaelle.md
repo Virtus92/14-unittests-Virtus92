@@ -15,4 +15,4 @@ Unter Anwendungsfall versteht man Fälle, die denselben Codeteil durchlaufen:
 - **Grenzfall/Spezialfall**: Je Grenzfall ein Test, da hierfür eine besondere Behandlung erfolgt.
 - **Fehlerfall**: Je Exception, die ausgeworfen werden kann, ein Test. Bei verschiedenen Anwendungsfällen, welche dieselbe Exception auswerfen, unbedingt jeweils 1 Test.
 
-Zurück zur [Startseite](README.md)
+Zurück zur [Startseite](../README.md)

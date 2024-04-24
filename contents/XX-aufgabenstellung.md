@@ -2,9 +2,7 @@
 
 ## Aufgabe: Unittests
 
-Klone das Projekt von Github: [Unittest-Projekt](https://github.com/CODERS-BAY-Coding/UnitTesting.git) Wie das geht findest du hier: [Clone Project from GITHub](05-cloneprojectfromgithub.md)
-
-Alle weiteren Informationen findest du im Projekt in der Klasse SquareTest. 
+In der Klasse `SquareTest` sind bereits Unittests implementiert. Jetzt ist es an dir, die Klasse `Square` entsprechend zu implementieren. Diese Vorgehensweise nennt man: Test Driven Development.
 
 ### Abnahmekriterien
 
@@ -15,4 +13,4 @@ Alle weiteren Informationen findest du im Projekt in der Klasse SquareTest.
 - Der Code ist gut strukturiert (Siehe Clean Code).
 - Der Code ist in GITHub eingecheckt.
 
-Zurück zur [Startseite](README.md)
+Zurück zur [Startseite](../README.md)
