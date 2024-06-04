@@ -19,4 +19,6 @@ Der:die Teilnehmer:in kann nach erfolgreicher Absolvierung dieses Themas:
 ## weiterführende Inhalte
 
 * [Java: JUnit 5 - User Guide](https://junit.org/junit5/docs/current/user-guide/)
+* [Java: Unittests - a comprehensive guide for writing effective tests](https://www.javacodegeeks.com/2023/08/unit-testing-best-practices-a-comprehensive-guide-for-writing-effective-tests.html)
 * [C#: NUnit - Dokumentation](https://docs.nunit.org/)
+* [Clean Unittesting](https://www.informatik-aktuell.de/entwicklung/methoden/clean-unit-testing-die-kunst-wartbare-unit-tests-zu-schreiben.html)

@@ -127,4 +127,6 @@ Wichtig ist, das Ziel nicht aus den Augen zu verlieren:
 
 Der Test erfolgt dann durch den `assert[...]`-Befehl.
 
+[Unittests Best Practices](https://www.browserstack.com/guide/unit-testing-best-practices)
+
 Zurück zur [Startseite](../README.md)
