@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class SquareTest {
     /*
-     * Your customer has requested a Java Class "com.cb.square.com.cb.square.Square" with one Method "calculate"
+     * Your customer has requested a Java Class "com.cb.square.Square" with one Method "calculate"
      * This method takes a positive int number as a parameter and returns the square of the number
      *
      * The Method looks like this:
